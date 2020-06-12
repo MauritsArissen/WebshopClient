@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(#28b485,#7ed56f);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.MainController">
+   <children>
+      <TableView fx:id="shopTable" layoutX="300.0" layoutY="20.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: rgba(0, 0, 0, 0);">
+         <columns>
+            <TableColumn fx:id="shopCol1" prefWidth="100.0" text="Product" />
+            <TableColumn fx:id="shopCol2" prefWidth="100.0" text="Price" />
+            <TableColumn fx:id="shopCol3" prefWidth="98.0" text="Stock" />
+         </columns></TableView>
+      <TableView fx:id="invTable" layoutY="20.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: rgba(0, 0, 0, 0);">
+         <columns>
+            <TableColumn fx:id="invCol1" prefWidth="100.0" text="Product" />
+            <TableColumn fx:id="invCol2" prefWidth="100.0" text="Price" />
+            <TableColumn fx:id="invCol3" prefWidth="98.0" text="Amount" />
+         </columns>
+      </TableView>
+      <Label layoutX="121.0" layoutY="2.0" text="Inventory">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="3.0" text="Shop">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buyBtn" layoutX="532.0" layoutY="231.0" mnemonicParsing="false" onAction="#pressBuyBtn" text="Buy">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="22.0" layoutY="232.0" text="Saldo">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="balance" layoutX="92.0" layoutY="232.0" prefHeight="38.0" prefWidth="96.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="error" alignment="CENTER" layoutX="-1.0" layoutY="262.0" prefHeight="17.0" prefWidth="600.0" textFill="RED" />
+   </children>
+</Pane>
